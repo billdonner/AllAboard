@@ -9,11 +9,12 @@ import SwiftUI
 
 @main
 struct AllAboardApp: App {
-  @State var isOnboardingComplete: Bool = false
+  
+  @AppStorage("OnboardingDone") private var onboardingdone = false
     var body: some Scene {
         WindowGroup {
-          let _ = print("AllAboardApp isOnboardingComplete: \(isOnboardingComplete)")
-          ContentView(isOnboardingComplete: $isOnboardingComplete)
+          let _ = print("AllAboardApp onboardingdone: \(onboardingdone)")
+          ContentView(isOnboardingComplete: $onboardingdone)
         }
     }
 }

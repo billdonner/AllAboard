@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-let totalPages = 15
+let totalPages = 9
 
 #Preview {
   OnboardingView(pageIndex: 0)

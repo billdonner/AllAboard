@@ -7,7 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8807A0C52CDA9EA600495A2B /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8807A0C42CDA9EA600495A2B /* OnboardingView.swift */; };
 		8807A0C72CDAAA8C00495A2B /* CommonAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8807A0C62CDAAA8C00495A2B /* CommonAssets.xcassets */; };
+		8807A0CA2CDAAFBF00495A2B /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 8807A0C92CDAAFBF00495A2B /* README.md */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -31,7 +33,9 @@
 		8807A0952CDA927E00495A2B /* AllAboard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AllAboard.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8807A0A52CDA927F00495A2B /* AllAboardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AllAboardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8807A0AF2CDA927F00495A2B /* AllAboardUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AllAboardUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		8807A0C42CDA9EA600495A2B /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		8807A0C62CDAAA8C00495A2B /* CommonAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = CommonAssets.xcassets; sourceTree = "<group>"; };
+		8807A0C92CDAAFBF00495A2B /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -43,11 +47,6 @@
 		8807A0A82CDA927F00495A2B /* AllAboardTests */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			path = AllAboardTests;
-			sourceTree = "<group>";
-		};
-		8807A0B22CDA927F00495A2B /* AllAboardUITests */ = {
-			isa = PBXFileSystemSynchronizedRootGroup;
-			path = AllAboardUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -80,10 +79,11 @@
 		8807A08C2CDA927E00495A2B = {
 			isa = PBXGroup;
 			children = (
+				8807A0C92CDAAFBF00495A2B /* README.md */,
 				8807A0C62CDAAA8C00495A2B /* CommonAssets.xcassets */,
+				8807A0C42CDA9EA600495A2B /* OnboardingView.swift */,
 				8807A0972CDA927E00495A2B /* AllAboard */,
 				8807A0A82CDA927F00495A2B /* AllAboardTests */,
-				8807A0B22CDA927F00495A2B /* AllAboardUITests */,
 				8807A0962CDA927E00495A2B /* Products */,
 			);
 			sourceTree = "<group>";
@@ -159,9 +159,6 @@
 			dependencies = (
 				8807A0B12CDA927F00495A2B /* PBXTargetDependency */,
 			);
-			fileSystemSynchronizedGroups = (
-				8807A0B22CDA927F00495A2B /* AllAboardUITests */,
-			);
 			name = AllAboardUITests;
 			packageProductDependencies = (
 			);
@@ -219,6 +216,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8807A0C72CDAAA8C00495A2B /* CommonAssets.xcassets in Resources */,
+				8807A0CA2CDAAFBF00495A2B /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -243,6 +241,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8807A0C52CDA9EA600495A2B /* OnboardingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

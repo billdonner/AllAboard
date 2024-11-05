@@ -1,24 +1,41 @@
-//
-//  ContentView.swift
-//  AllAboard
-//
-//  Created by bill donner on 11/5/24.
-//
-
 import SwiftUI
 
+
+
 struct ContentView: View {
+
+@Binding var isOnboardingComplete: Bool
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            if isOnboardingComplete {
+              GameView(isOnboardingComplete: $isOnboardingComplete) // Main app content displayed after onboarding
+            } else {
+              InnerOnboardingView(isOnboardingComplete: $isOnboardingComplete)
+            }
         }
-        .padding()
     }
 }
 
+// Main app view displayed after the user completes or exits onboarding
+struct GameView: View {
+
+  @Binding var isOnboardingComplete: Bool 
+  var body: some View {
+    VStack {
+      Text("Welcome to the Game!")
+        .font(.largeTitle)
+        .padding()
+      
+      Text("Main game content goes here.")
+        .padding()
+      
+      Button("Reset Onboarding"){
+        isOnboardingComplete = false
+      }
+    }
+  }
+}
+
 #Preview {
-    ContentView()
+  ContentView(isOnboardingComplete: .constant(false))
 }
